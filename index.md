@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="icon" href="css/img/logo.png"/>
+    <link rel="icon" href="http://i.imgur.com/7PgLA2z.png"/>
     <title>LK Browser Engine</title>
     <link href="css/style.css" rel="stylesheet"/>
   </head>
