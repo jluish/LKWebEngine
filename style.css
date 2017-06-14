@@ -1,0 +1,103 @@
+html {
+  height: 378px;
+  width: 672px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  overflow: hidden; }
+
+body {
+  margin: auto;
+  background-color: black; }
+  body main {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(img/grass.png); }
+    body main .light {
+      z-index: 9 !important;
+      background-color: white;
+      border-radius: 50%;
+      opacity: 0.6;
+      filter: drop-shadow(0px 0px 15px rgba(225, 225, 225, 0.9)); }
+    body main .mob, body main .light, body main #player {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 4;
+      width: 42px;
+      height: 42px;
+      position: absolute; }
+    body main .turf, body main .wall {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: 4;
+      width: 42px;
+      height: 42px;
+      position: absolute; }
+    body main .exit {
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      background-color: black;
+      opacity: 0.6;
+      z-index: 4; }
+    body main .wall {
+      background-image: url(img/wall.png); }
+    body main #pshadow {
+      position: absolute;
+      width: 42px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.9);
+      margin-bottom: -6px;
+      z-index: 3 !important; }
+    body main #bumper {
+      position: absolute;
+      height: 30px;
+      width: 32.30769px;
+      z-index: 19;
+      opacity: 0; }
+    body main .gamepad {
+      position: fixed;
+      z-index: 12;
+      width: 8px;
+      height: 8px;
+      margin-left: -4px;
+      margin-top: -4px;
+      display: none;
+      opacity: 0.5; }
+    body main #gpup {
+      width: 60px;
+      height: 96px;
+      margin-left: -30px;
+      margin-top: -102px; }
+    body main #gpdown {
+      width: 60px;
+      height: 96px;
+      margin-left: -30px;
+      margin-top: 6px;
+      transform: rotate(180deg); }
+    body main #gpright {
+      width: 64px;
+      height: 92px;
+      margin-left: 22px;
+      margin-top: -46px;
+      transform: rotate(90deg); }
+    body main #gpleft {
+      width: 64px;
+      height: 92px;
+      margin-left: -84px;
+      margin-top: -46px;
+      transform: rotate(-90deg); }
+    body main #scenestart {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 11;
+      background-color: black;
+      opacity: 1;
+      pointer-events: none; }
