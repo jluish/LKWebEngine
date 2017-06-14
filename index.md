@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" href="http://i.imgur.com/7PgLA2z.png"/>
     <title>LK Browser Engine</title>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
   </head>
   <body>
     <main>
