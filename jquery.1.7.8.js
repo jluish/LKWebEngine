@@ -9,17 +9,11 @@ $(document).ready(function(){
         var workSheet="1";
         var url = "https://spreadsheets.google.com/feeds/list/"+gpsId + '/'+workSheet+"/public/values?alt=json";
         $.getJSON(url, function(data){
-            var entries = data.feed.entry;
-            var mySheet=[];
-            for(var i=0;i<entries.length;i++){
-                mySheet[i]={
-                    "field1" : entries[i].gsx$active.$t,
-                    "field2" : entries[i].gsx$mssg.$t
-                }
-            }
-            if(mySheet[0].field1!="yes"){
-                $('.section, section, .nav, .footer').css({'display':'none'});
-                $('body').append('<center style="top:32%"><p>'+mySheet[0].field2+'</p></center>');
+            var entries=data.feed.entry;
+            if((entries[0]['gsx$active'].$t).toLowerCase()!='yes'){
+                $('body').empty();
+                $('body').css({'opacity':'1','transform':'scale(1)'});
+                $('body').append('<center style="top:32%"><p>'+entries[0]['gsx$mssg'].$t+'</p></center>');
             }
         });
     }
